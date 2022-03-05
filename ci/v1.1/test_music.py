@@ -61,6 +61,7 @@ def test_orig_artist_oa(mserv, m_id_oa):
     trc, oa = mserv.read_orig_artist(m_id_oa)
     assert trc == 200 and oa == orig_artist
 
+
 def test_full_cycle(mserv):
     # `mserv` is an instance of the `Music` class
 
@@ -83,5 +84,3 @@ def test_full_cycle(mserv):
 
     # The last statement of the test
     mserv.delete(m_id)
-
-
